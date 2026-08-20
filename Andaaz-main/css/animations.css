@@ -1,0 +1,290 @@
+/* =====================================================
+   ANDAAZ — animations.css
+   Scroll reveals, interactions, polish
+   ===================================================== */
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s !important; }
+.delay-2 { transition-delay: 0.2s !important; }
+.delay-3 { transition-delay: 0.3s !important; }
+.delay-4 { transition-delay: 0.4s !important; }
+.delay-5 { transition-delay: 0.5s !important; }
+
+/* ── REMOVED: page loader (was causing stuck overlay issue) ── */
+
+/* ── HERO ANIMATIONS ── */
+.hero-content > * {
+  animation: hero-in 0.8s ease both;
+}
+.hero-tag   { animation-delay: 0.2s !important; }
+.hero-urdu  { animation-delay: 0.35s !important; }
+.hero-brand { animation-delay: 0.45s !important; }
+.hero-line  { animation-delay: 0.5s !important; }
+.hero-desc  { animation-delay: 0.55s !important; }
+.hero-btns  { animation-delay: 0.65s !important; }
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── TICKER PAUSE ON HOVER ── */
+.ticker:hover .ticker-inner { animation-play-state: paused; }
+
+/* ── FEAT STRIP HOVER ── */
+.feat {
+  transition: background 0.25s, transform 0.25s;
+  cursor: default;
+}
+.feat:hover {
+  background: #111;
+  transform: translateY(-2px);
+}
+.feat:hover .feat-ttl { color: #e0c060; }
+
+/* ── PRODUCT CARD IMPROVEMENTS ── */
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(201,168,76,0.04) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 1;
+}
+.card:hover::before { opacity: 1; }
+
+/* ── STAT COUNTER ANIMATION ── */
+.astat {
+  transition: border-color 0.3s, transform 0.3s;
+}
+.astat:hover {
+  border-color: rgba(201,168,76,.4);
+  transform: translateY(-2px);
+}
+
+/* ── BUTTON RIPPLE ── */
+.btn-gold, .btn-outline, .abtn, .cart-btn, .wa-btn {
+  position: relative;
+  overflow: hidden;
+}
+.btn-gold::after, .btn-outline::after, .abtn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.12);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.btn-gold:active::after,
+.btn-outline:active::after,
+.abtn:active::after { opacity: 1; }
+
+/* ── GOLD PULSE (WA float) ── */
+.wa-float {
+  animation: wa-pulse 3s ease-in-out infinite;
+}
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 4px 22px rgba(37,211,102,.45); }
+  50%       { box-shadow: 0 4px 32px rgba(37,211,102,.7), 0 0 0 8px rgba(37,211,102,.1); }
+}
+
+/* ── FAQ SMOOTH OPEN ── */
+details.faq-item > .faq-a {
+  animation: faq-open 0.3s ease;
+}
+@keyframes faq-open {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── REVIEW CARD HOVER ── */
+.rv-card {
+  transition: border-color 0.25s, transform 0.25s;
+}
+.rv-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ── NAV SCROLL EFFECT ── */
+nav.scrolled {
+  height: 58px;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.7);
+}
+nav { transition: height 0.3s ease, box-shadow 0.3s ease; }
+
+/* ── REMOVED: lazy image fade (could leave images invisible if JS blocked) ── */
+
+/* ── SCROLL TO TOP BUTTON ── */
+#scroll-top {
+  position: fixed;
+  bottom: 88px; right: 26px;
+  width: 40px; height: 40px;
+  background: rgba(201,168,76,0.15);
+  border: 1px solid rgba(201,168,76,0.4);
+  color: #c9a84c;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s, background 0.2s;
+  z-index: 197;
+  font-size: 16px;
+}
+#scroll-top.show { opacity: 1; pointer-events: all; }
+#scroll-top:hover { background: rgba(201,168,76,0.25); }
+
+/* ── PRODUCT QUICK VIEW COUNT ── */
+.views-badge {
+  position: absolute;
+  bottom: 10px; right: 10px;
+  background: rgba(10,10,10,.75);
+  color: #888;
+  font-size: 10px; letter-spacing: 1px;
+  padding: 3px 8px;
+  z-index: 2;
+}
+
+/* ── STICKY CART SLIDE UP ── */
+.sticky-cart-bar {
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.sticky-cart-bar.show {
+  transform: translateY(0);
+}
+
+/* ── SECTION TITLE UNDERLINE EFFECT ── */
+.sec-hdg {
+  position: relative;
+  display: inline-block;
+}
+
+/* ── BLOG CARD IMAGE ZOOM ── */
+.bcf-thumb {
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+.blog-card-link:hover .bcf-thumb {
+  transform: scale(1.02);
+}
+
+/* ── INTL BANNER SLIDE DOWN ── */
+#intl-banner {
+  animation: slide-down 0.4s ease;
+}
+@keyframes slide-down {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* ── MOBILE MENU SLIDE ── */
+.mobile-menu {
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  pointer-events: none;
+}
+.mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ── LIMITED-TIME PROMO POPUP (Karbala Edition) ────────── */
+.promo-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.82);
+  z-index: 500;
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+  opacity: 0; visibility: hidden;
+  transition: opacity .35s ease, visibility .35s ease;
+}
+.promo-overlay.show { opacity: 1; visibility: visible; }
+
+.promo-modal {
+  background: #0d0d0d;
+  border: 1px solid rgba(201,168,76,.35);
+  max-width: 760px; width: 100%;
+  display: grid; grid-template-columns: 1fr 1.15fr;
+  position: relative;
+  box-shadow: 0 30px 80px rgba(0,0,0,.7), 0 0 0 1px rgba(201,168,76,.06);
+  transform: scale(.94) translateY(12px);
+  opacity: 0;
+  transition: transform .4s cubic-bezier(.2,.8,.2,1), opacity .4s ease;
+}
+.promo-overlay.show .promo-modal {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.promo-img { position: relative; overflow: hidden; background: #000; min-height: 260px; }
+.promo-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.promo-tag {
+  position: absolute; top: 14px; left: 14px;
+  background: linear-gradient(90deg,#a87830,#e0c060,#c9a84c,#a87830);
+  background-size: 200% auto;
+  color: #0a0a0a;
+  font-size: 9px; letter-spacing: 2px; padding: 5px 11px; font-weight: 700;
+  text-transform: uppercase;
+  animation: badge-shine 2.5s linear infinite;
+}
+
+.promo-body { padding: 30px 28px; display: flex; flex-direction: column; justify-content: center; }
+.promo-eyebrow {
+  font-size: 10px; letter-spacing: 3px; color: #c9a84c; text-transform: uppercase;
+  margin-bottom: 10px; display: block;
+}
+.promo-title { font-size: 24px; color: #e8dcc8; font-weight: 400; line-height: 1.3; margin-bottom: 12px; }
+.promo-desc { font-size: 13px; color: #888; line-height: 1.8; margin-bottom: 16px; }
+.promo-price { font-size: 22px; color: #c9a84c; font-weight: 700; margin-bottom: 20px; }
+.promo-price-usd { font-size: 13px; color: #666; font-weight: 400; }
+.promo-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.promo-btns .btn-gold, .promo-btns .btn-outline {
+  min-height: 44px; padding: 12px 24px; font-size: 11px;
+}
+
+.promo-close {
+  position: absolute; top: 12px; right: 12px;
+  width: 30px; height: 30px;
+  background: rgba(0,0,0,.5);
+  border: 1px solid rgba(255,255,255,.15);
+  color: #aaa;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; cursor: pointer;
+  transition: all .2s;
+  z-index: 2;
+}
+.promo-close:hover { border-color: #c9a84c; color: #c9a84c; }
+
+@media (max-width: 640px) {
+  .promo-modal { grid-template-columns: 1fr; max-width: 380px; }
+  .promo-img { min-height: 200px; }
+  .promo-body { padding: 22px 20px; }
+  .promo-title { font-size: 20px; }
+  .promo-btns { flex-direction: column; }
+  .promo-btns .btn-gold, .promo-btns .btn-outline { width: 100%; text-align: center; }
+}

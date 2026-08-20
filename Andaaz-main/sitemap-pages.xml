@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.andaazpk.online/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.andaazpk.online/"/>
+    <xhtml:link rel="alternate" hreflang="en-PK" href="https://www.andaazpk.online/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.andaazpk.online/"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.andaazpk.online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.andaazpk.online/"/>
+    <image:image>
+      <image:loc>https://www.andaazpk.online/assets/images/tee-black-premium.webp</image:loc>
+      <image:title>Andaaz Premium Black Oversized T-Shirt Pakistan — Rs 799</image:title>
+      <image:caption>100% combed cotton black oversized tee with gold Urdu calligraphy</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.andaazpk.online/assets/images/tee-navy.webp</image:loc>
+      <image:title>Andaaz Navy Blue Downshoulder T-Shirt Pakistan — Rs 1199</image:title>
+      <image:caption>Navy blue downshoulder oversized tee with gold Urdu calligraphy</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.andaazpk.online/assets/images/tee-beige-1.webp</image:loc>
+      <image:title>Andaaz Beige Downshoulder T-Shirt Brown Print — Rs 1199</image:title>
+      <image:caption>Beige downshoulder tee with brown Urdu calligraphy print</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.andaazpk.online/assets/images/tee-white-1.webp</image:loc>
+      <image:title>Andaaz White Premium Downshoulder T-Shirt — Rs 1199</image:title>
+      <image:caption>White premium edition downshoulder tee with gold calligraphy</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.andaazpk.online/assets/images/tee-brown.webp</image:loc>
+      <image:title>Andaaz Chocolate Brown Downshoulder T-Shirt — Rs 1999</image:title>
+      <image:caption>Chocolate brown downshoulder tee with white Urdu calligraphy</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.andaazpk.online/assets/images/tee-karbala-back.webp</image:loc>
+      <image:title>Andaaz Karbala Edition Oversized T-Shirt — Rs 1999</image:title>
+      <image:caption>Limited edition black oversized tee with Karbala — The Land of Sacrifice print, perfect for Muharram</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.andaazpk.online/blog/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.andaazpk.online/our-story/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
