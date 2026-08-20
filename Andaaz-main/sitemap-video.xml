@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://www.andaazpk.online/our-story/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.andaazpk.online/assets/images/tee-black-premium.webp</video:thumbnail_loc>
+      <video:title>Andaaz Brand Film — Our Story | Pakistan Premium Tee Brand</video:title>
+      <video:description>The official Andaaz brand film. Watch the story behind Pakistan's premium Urdu calligraphy t-shirt brand from Karachi. Oversized tees, bold calligraphy, crafted with pride.</video:description>
+      <video:content_loc>https://www.andaazpk.online/assets/video/hero.mp4</video:content_loc>
+      <video:duration>52</video:duration>
+      <video:publication_date>2026-05-01T00:00:00+05:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      <video:tag>andaaz brand</video:tag>
+      <video:tag>oversized tshirt pakistan</video:tag>
+      <video:tag>urdu calligraphy tshirt</video:tag>
+      <video:tag>karachi fashion brand</video:tag>
+    </video:video>
+  </url>
+</urlset>
