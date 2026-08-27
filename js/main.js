@@ -6,56 +6,62 @@ const WA2 = '923141159580';
 
 /* ── PRODUCTS ── */
 const PRODUCTS = [
-   {
-    id:1, name:'Big Bush Brown Edition', color:'Brown', fit:'oversized',
+    {
+    id:1, name:'Vinter Archive 002 Street Edition', color:'Cream', fit:'Hoodies',
+    pricePKR:1999, priceUSD:17.99, badge:'NEW ARRIVAL', sku:'ANZ-VSE-001',
+    desc:'Introducing the Vinter Archive 002 Street Edition — crafted for those who carry their own Andaaz. Vinter Archive 002 Street Edition with Andaaz logo on front pocket which lokk premium and classy Shot on the streets of Karachi.',
+    img:'assets/images/Hoodies-1-.jpeg', imgFb:'assets/images/Hoodies-2-.webp', img2:'assets/images/Hoodies-2-.webp'
+  },
+  {
+    id:2, name:'Big Bush Brown Edition', color:'Brown', fit:'oversized',
     pricePKR:1799, priceUSD:17.99, badge:'NEW ARRIVAL', sku:'ANZ-VSE-001',
     desc:'Introducing the Big Bush Brown Edition premuim quality — crafted for those who carry their own Andaaz. Oversized drop-shoulder fit with tonal ANDAAZ EST. 2026 chest print. Shot on the streets of Karachi and universities,parties and for premuim look like as brown bear and stand alone in the gathering.',
     img:'assets/images/tees-brown-1.webp', imgFb:'assets/images/tees-brown-2.jpeg', img2:'assets/images/tees-brown-2.jpeg'
   },
   {
-    id:2, name:'Vintage Street Edition', color:'Black', fit:'oversized',
+    id:3, name:'Vintage Street Edition', color:'Black', fit:'oversized',
     pricePKR:1599, priceUSD:17.99, badge:'NEW ARRIVAL', sku:'ANZ-VSE-001',
     desc:'Introducing the Vintage Street Edition — crafted for those who carry their own Andaaz. Oversized drop-shoulder fit with tonal ANDAAZ EST. 2026 chest print. Shot on the streets of Karachi.',
     img:'assets/images/tee-vintage-1.webp', imgFb:'assets/images/tee-vintage-1.jpg', img2:'assets/images/tee-vintage-2.webp'
   },
   {
-    id:3, name:'Karbala Edition Oversized Tee', color:'Black', fit:'oversized',
+    id:4, name:'Karbala Edition Oversized Tee', color:'Black', fit:'oversized',
     pricePKR:1999, priceUSD:22.99, badge:'LIMITED EDITION', sku:'ANZ-KRB-001',
     desc:'Premium oversized black t-shirt featuring an exclusive Karbala-inspired design — "The Land of Sacrifice." Drop-shoulder fit, soft 100% cotton, high-quality DTF back print. Perfect for Muharram and everyday wear.',
     img:'assets/images/tee-karbala-back.webp', imgFb:'assets/images/tee-karbala-back.jpg', img2:'assets/images/tee-karbala-front.webp'
   },
   {
-    id:4, name:'Tank Top', color:'White', fit:'tank',
+    id:5, name:'Tank Top', color:'White', fit:'tank',
     pricePKR:799, priceUSD:8.99, badge:'NEW', sku:'ANZ-TNK-001',
     desc:'Andaaz Tank Top Collection — premium sleeveless tee crafted from ultra-soft 100% combed cotton. Minimalist "andaaz" chest print in rich brown. Perfect for summer, gym, or everyday layering.',
     img:'assets/images/tee-tank-white.webp', imgFb:'assets/images/tee-tank-white.jpg', img2:null
   },
   {
-    id:5, name:'Premium Embroidered Tee', color:'Black', fit:'oversized',
+    id:6, name:'Premium Embroidered Tee', color:'Black', fit:'oversized',
     pricePKR:799, priceUSD:8.99, badge:'BEST SELLER', sku:'ANZ-BLK-001',
     desc:'100% combed cotton oversized tee with gold embroidered Urdu calligraphy. Drop-shoulder relaxed fit. Karachi\'s favourite street style staple.',
     img:'assets/images/tee-black-premium.webp', imgFb:'assets/images/tee-black-premium.jpg', img2:null
   },
   {
-    id:6, name:'Downshoulder Tee', color:'Navy Blue', fit:'oversized',
+    id:7, name:'Downshoulder Tee', color:'Navy Blue', fit:'oversized',
     pricePKR:1199, priceUSD:13.99, badge:'NEW', sku:'ANZ-NVY-001',
     desc:'Premium navy blue drop-shoulder oversized tee with gold foil Urdu print. Heavyweight cotton, modern silhouette.',
     img:'assets/images/tee-navy.webp', imgFb:'assets/images/tee-navy.jpg', img2:null
   },
   {
-    id:7, name:'Downshoulder Premium', color:'White', fit:'oversized',
+    id:8, name:'Downshoulder Premium', color:'White', fit:'oversized',
     pricePKR:1199, priceUSD:13.99, badge:'PREMIUM EDITION', sku:'ANZ-WHT-001',
     desc:'Limited edition white downshoulder tee with gold Urdu calligraphy. Ultra-soft cotton. Unisex fit.',
     img:'assets/images/tee-white-1.webp', imgFb:'assets/images/tee-white-1.jpg', img2:'assets/images/tee-white-2.webp'
   },
   {
-    id:8, name:'Downshoulder Tee', color:'Beige — Brown Print', fit:'oversized',
+    id:9, name:'Downshoulder Tee', color:'Beige — Brown Print', fit:'oversized',
     pricePKR:1199, priceUSD:13.99, badge:'NEW', sku:'ANZ-BGE-001',
     desc:'Premium beige downshoulder tee with tonal brown Urdu calligraphy print. Earth-tone aesthetic meets cultural depth.',
     img:'assets/images/tee-beige-1.webp', imgFb:'assets/images/tee-beige-1.jpg', img2:'assets/images/tee-beige-2.webp'
   },
   {
-    id:9, name:'Downshoulder Tee', color:'Chocolate Brown', fit:'oversized',
+    id:10, name:'Downshoulder Tee', color:'Chocolate Brown', fit:'oversized',
     pricePKR:1999, priceUSD:22.99, badge:'NEW ARRIVAL', sku:'ANZ-BRN-001',
     desc:'Rich chocolate brown downshoulder oversized tee with white Urdu calligraphy. Premium heavyweight cotton, bold contrast. The newest drop from Andaaz.',
     img:'assets/images/tee-brown.webp', imgFb:'assets/images/tee-brown.jpg', img2:null
