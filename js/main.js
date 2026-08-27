@@ -10,7 +10,7 @@ const PRODUCTS = [
     id:1, name:'Vinter Archive 002 Street Edition', color:'Cream', fit:'Hoodies',
     pricePKR:1999, priceUSD:17.99, badge:'NEW ARRIVAL', sku:'ANZ-VSE-001',
     desc:'Introducing the Vinter Archive 002 Street Edition — crafted for those who carry their own Andaaz. Vinter Archive 002 Street Edition with Andaaz logo on front pocket which lokk premium and classy Shot on the streets of Karachi.',
-    img:'assets/images/Hoodies-1-.jpeg', imgFb:'assets/images/Hoodies-2-.webp', img2:'assets/images/Hoodies-2-.webp'
+    img:'assets/images/Hoodies-2-.webp', imgFb:'assets/images/Hoodies-1-.jpeg', img2:'assets/images/Hoodies-1-.jpeg'
   },
   {
     id:2, name:'Big Bush Brown Edition', color:'Brown', fit:'oversized',
